@@ -170,6 +170,7 @@ public class AddressPickerTask extends AsyncTask<String, Void, ArrayList<Provinc
                 selectedCounty == -1 ? 0 : selectedCounty);
         mOptionsPickerView.setCyclic(false, false, false);
         mOptionsPickerView.setOnoptionsSelectListener(mOnOptionsSelectListener);
+        mOptionsPickerView.setCancelable(true);
         mOptionsPickerView.show();
     }
 

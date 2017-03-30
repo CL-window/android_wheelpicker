@@ -7,6 +7,8 @@ import android.graphics.Paint;
 import android.graphics.Rect;
 import android.graphics.Typeface;
 import android.os.Handler;
+import android.text.TextPaint;
+import android.text.TextUtils;
 import android.util.AttributeSet;
 import android.view.GestureDetector;
 import android.view.Gravity;
@@ -373,7 +375,6 @@ public class WheelView extends View {
 
 
                 String contentText = getContentText(visibles[counter]);
-
                 //计算开始绘制的位置
                 measuredCenterContentStart(contentText);
                 measuredOutContentStart(contentText);

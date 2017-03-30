@@ -17,7 +17,13 @@ import com.bigkoo.pickerview.model.IPickerViewData;
 import com.cl.slack.picker1.bean.PickerViewData;
 import com.cl.slack.picker1.bean.ProvinceBean;
 
-
+/**
+ * @author slack
+ * @time 17/3/17 下午12:54
+ * 修改字体大小
+ * 取消 确定   pickerview/values/dimens.xml:9
+ * 滑轮       com/bigkoo/pickerview/view/WheelOptions.java:77
+ */
 public class MainActivity extends Activity {
 
     private ArrayList<ProvinceBean> options1Items = new ArrayList<>();

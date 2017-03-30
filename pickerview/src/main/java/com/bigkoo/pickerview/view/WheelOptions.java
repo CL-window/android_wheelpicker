@@ -1,6 +1,8 @@
 package com.bigkoo.pickerview.view;
 
 import java.util.ArrayList;
+
+import android.view.Gravity;
 import android.view.View;
 
 import com.bigkoo.pickerview.R;
@@ -74,11 +76,15 @@ public class WheelOptions<T> {
 					.get(0)));// 设置显示数据
 		wv_option3.setCurrentItem(wv_option3.getCurrentItem());// 初始化时显示的数据
 
-		int textSize = 25;
+		int textSize = 16;
 
 		wv_option1.setTextSize(textSize);
 		wv_option2.setTextSize(textSize);
 		wv_option3.setTextSize(textSize);
+
+//		wv_option1.setGravity(Gravity.LEFT);
+//		wv_option2.setGravity(Gravity.LEFT);
+//		wv_option3.setGravity(Gravity.LEFT);
 
 		if (this.mOptions2Items == null)
 			wv_option2.setVisibility(View.GONE);
